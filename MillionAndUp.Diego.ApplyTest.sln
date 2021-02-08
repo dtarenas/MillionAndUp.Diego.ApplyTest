@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Domain", "1. Domain", "{E4B6200D-BFA0-417E-AE2B-C926E45A4C3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionAndUp.Diego.ApplyTest.Domain", "MillionAndUp.Diego.ApplyTest.Domain\MillionAndUp.Diego.ApplyTest.Domain.csproj", "{8A8C37F8-6A98-4C98-A400-F935C2EBB1C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Infrastructure (DAL and Services)", "2. Infrastructure (DAL and Services)", "{4CAE3D16-F165-42DD-AAE7-3B591038CCD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionAndUp.Diego.ApplyTest.Infrastructure", "MillionAndUp.Diego.ApplyTest.Infrastructure\MillionAndUp.Diego.ApplyTest.Infrastructure.csproj", "{533D4043-31B4-4700-9125-BD79C76CCD45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Presentation", "3. Presentation", "{E59EE99D-B119-4797-B350-6070DC0893FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionAndUp.Diego.ApplyTest.Presentation", "MillionAndUp.Diego.ApplyTest.Presentation\MillionAndUp.Diego.ApplyTest.Presentation.csproj", "{B03B19A9-1C45-413A-8935-7C13DB8B1639}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Unit Test", "4. Unit Test", "{61F57EDF-B2EE-405A-87CE-68019EF2D510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionAndUp.Diego.ApplyTest.UnitTest", "MillionAndUp.Diego.ApplyTest.UnitTest\MillionAndUp.Diego.ApplyTest.UnitTest.csproj", "{2240743A-3A70-4CAC-AD20-7C45E4FC9AEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A8C37F8-6A98-4C98-A400-F935C2EBB1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8C37F8-6A98-4C98-A400-F935C2EBB1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8C37F8-6A98-4C98-A400-F935C2EBB1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8C37F8-6A98-4C98-A400-F935C2EBB1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533D4043-31B4-4700-9125-BD79C76CCD45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533D4043-31B4-4700-9125-BD79C76CCD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533D4043-31B4-4700-9125-BD79C76CCD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533D4043-31B4-4700-9125-BD79C76CCD45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B03B19A9-1C45-413A-8935-7C13DB8B1639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03B19A9-1C45-413A-8935-7C13DB8B1639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03B19A9-1C45-413A-8935-7C13DB8B1639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03B19A9-1C45-413A-8935-7C13DB8B1639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2240743A-3A70-4CAC-AD20-7C45E4FC9AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2240743A-3A70-4CAC-AD20-7C45E4FC9AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2240743A-3A70-4CAC-AD20-7C45E4FC9AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2240743A-3A70-4CAC-AD20-7C45E4FC9AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A8C37F8-6A98-4C98-A400-F935C2EBB1C7} = {E4B6200D-BFA0-417E-AE2B-C926E45A4C3A}
+		{533D4043-31B4-4700-9125-BD79C76CCD45} = {4CAE3D16-F165-42DD-AAE7-3B591038CCD9}
+		{B03B19A9-1C45-413A-8935-7C13DB8B1639} = {E59EE99D-B119-4797-B350-6070DC0893FE}
+		{2240743A-3A70-4CAC-AD20-7C45E4FC9AEA} = {61F57EDF-B2EE-405A-87CE-68019EF2D510}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {556E9422-8FC4-438C-9722-950F6AD948F5}
+	EndGlobalSection
+EndGlobal

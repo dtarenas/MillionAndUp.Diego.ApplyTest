@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MillionAndUp.Diego.ApplyTest.Domain.Entities.BookEntity>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header-custom header-filter-custom" data-parallax="true">
+</div>
+
+<div class="container">
+    <h1>Books</h1>
+
+    <p>
+        <a asp-action="Index" asp-controller="Home" asp-area="" class="btn btn-dark"><i class="fa fa-arrow-left"></i> Back to Home</a>
+        <a asp-action="Create" class="btn btn-outline-secondary"><i class="fa fa-plus"></i> Create New</a>
+    </p>
+    <table class="table table-striped table-responsive-sm mb-3" width="100%">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Synopsis)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumberOfPages)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FkEditorialId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FkAuthorId)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Synopsis)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NumberOfPages)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FkEditorial.Headquarter)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FkAuthor.FirstName)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ISBN">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ISBN">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ISBN">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

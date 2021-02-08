@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('@Url.Content("~/assets/img/main-background.jpg")')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="title">Diego Arenas Apply Test.</h1>
+                <h4>I will be part of Million and Up history.</h4>
+                <br>
+                <a id="getStarted" class="btn btn-danger btn-raised btn-lg">
+                    <i class="fa fa-play"></i> Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main main-raised">
+    <div class="container">
+        <div class="section text-center">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="title">Bookshop</h2>
+                    <h4 class="description">Select an option to list elements.</h4>
+                </div>
+            </div>
+            <div class="features" id="feactures">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info">
+                            <a href="Authors" class="listing">
+                                <div class="icon icon-info">
+                                    <i class="material-icons">face</i>
+                                </div>
+                                <h4 class="info-title">Authors</h4>
+                                <p>List of authors</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <a href="Editorials" class="listing">
+                                <div class="icon icon-success">
+                                    <i class="material-icons">insert_comment</i>
+                                </div>
+                                <h4 class="info-title">Editorials</h4>
+                                <p>List of Editorials</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <a href="Books" class="listing">
+                                <div class="icon icon-danger">
+                                    <i class="material-icons">library_books</i>
+                                </div>
+                                <h4 class="info-title">Books</h4>
+                                <p>List of books</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main main-raised my-4" id="render-result">
+
+</div>
+
+
+@section Scripts{ 
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', async () => {            
+            await setListenerForAnchors();
+
+            const $getStarted = document.querySelector("#getStarted");
+            if ($getStarted) {
+                $getStarted.addEventListener('click', () => {
+                    const offsetTop = document.querySelector("#feactures").offsetTop + 300;
+                    scroll({
+                        top: offsetTop,
+                        behavior: "smooth"
+                    });
+                });
+            }
+        });
+    </script>
+}
